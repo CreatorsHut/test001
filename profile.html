@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 - 스마트팜</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">스마트팜</div>
+            <ul>
+                <li><a href="index.html">메인</a></li>
+                <li><a href="introduction.html">소개</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="profile.html">프로필</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h1>내 프로필</h1>
+            <div class="profile-info">
+                <div class="info-item">
+                    <label>사용자 이름:</label>
+                    <span id="displayUsername">사용자123</span>
+                </div>
+                <div class="info-item">
+                    <label>이메일:</label>
+                    <span id="displayEmail">user@example.com</span>
+                </div>
+                <div class="info-item">
+                    <label>연락처:</label>
+                    <span id="displayPhone">010-1234-5678</span>
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <button id="editProfileBtn">프로필 수정</button>
+                <button id="changePasswordBtn">비밀번호 변경</button>
+                <button id="logoutBtn">로그아웃</button>
+            </div>
+
+            <div id="editProfileForm" class="hidden">
+                <h2>프로필 수정</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="editUsername">사용자 이름</label>
+                        <input type="text" id="editUsername" value="사용자123">
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">이메일</label>
+                        <input type="email" id="editEmail" value="user@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">연락처</label>
+                        <input type="text" id="editPhone" value="010-1234-5678">
+                    </div>
+                    <button type="submit">저장</button>
+                    <button type="button" id="cancelEditBtn">취소</button>
+                </form>
+            </div>
+
+            <div id="changePasswordForm" class="hidden">
+                <h2>비밀번호 변경</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="currentPassword">현재 비밀번호</label>
+                        <input type="password" id="currentPassword">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">새 비밀번호</label>
+                        <input type="password" id="newPassword">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmNewPassword">새 비밀번호 확인</label>
+                        <input type="password" id="confirmNewPassword">
+                    </div>
+                    <button type="submit">비밀번호 변경</button>
+                    <button type="button" id="cancelPasswordChangeBtn">취소</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 스마트팜. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
