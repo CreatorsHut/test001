@@ -1,0 +1,202 @@
+/* profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 80px; /* Adjust for fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top, not center */
+    min-height: calc(100vh - 140px); /* Adjust for header and footer */
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+}
+
+.profile-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 30px; /* Add some top margin */
+}
+
+.profile-section h1 {
+    color: #28a745;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.profile-info {
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-item label {
+    font-weight: bold;
+    color: #555;
+    width: 120px; /* Fixed width for labels */
+    flex-shrink: 0;
+}
+
+.info-item span {
+    flex-grow: 1;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.profile-actions button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px 20px 10px;
+}
+
+.profile-actions button:hover {
+    background-color: #218838;
+}
+
+.profile-actions button#logoutBtn {
+    background-color: #dc3545;
+}
+
+.profile-actions button#logoutBtn:hover {
+    background-color: #c82333;
+}
+
+.hidden {
+    display: none;
+}
+
+#editProfileForm, #changePasswordForm {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    text-align: left;
+}
+
+#editProfileForm h2, #changePasswordForm h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#editProfileForm .form-group, #changePasswordForm .form-group {
+    margin-bottom: 15px;
+}
+
+#editProfileForm label, #changePasswordForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#editProfileForm input, #changePasswordForm input {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#editProfileForm button, #changePasswordForm button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#editProfileForm button:hover, #changePasswordForm button:hover {
+    background-color: #0056b3;
+}
+
+#editProfileForm button#cancelEditBtn, #changePasswordForm button#cancelPasswordChangeBtn {
+    background-color: #6c757d;
+}
+
+#editProfileForm button#cancelEditBtn:hover, #changePasswordForm button#cancelPasswordChangeBtn:hover {
+    background-color: #5a6268;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
